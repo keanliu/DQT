@@ -1,11 +1,31 @@
 python:
 
-sudo apt update
-sudo apt install software-properties-common
+    sudo apt update
+    sudo apt install software-properties-common
 
-sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo add-apt-repository ppa:deadsnakes/ppa
 
-sudo apt install python2.7
-sudo apt install python3.7
+    sudo apt install python2.7
+    sudo apt install python3.7
 
-sudo apt install python3.7-venv
+    sudo apt install python3.7-venv
+
+android sdk:
+
+    sudo apt update
+    sudo apt -y install android-sdk
+    
+
+android studio:
+
+    desktop env:
+        sudo apt install xfce4 xfce4-goodies
+        sudo apt install tightvncserver
+        vncserver
+        vncserver -kill :1
+        nano ~/.vnc/xstartup
+            #!/bin/bash
+            xrdb $HOME/.Xresources
+            startxfce4 &
+
+
